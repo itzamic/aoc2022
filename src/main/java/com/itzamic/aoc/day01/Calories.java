@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -26,7 +27,7 @@ public class Calories {
             sum += Integer.parseInt(line);
         }
         System.out.println(getMax(calories));
-
+        System.out.println(calories.stream().sorted(Comparator.reverseOrder()).mapToInt(Integer::intValue).limit(3).sum());
     }
 
     private static int getMax(List<Integer> calories) {
