@@ -1,4 +1,4 @@
-package com.itzamic.aoc.day3;
+package com.itzamic.aoc.day03;
 
 import com.itzamic.aoc.utils.ResourceUtil;
 import org.apache.commons.lang3.tuple.Pair;
